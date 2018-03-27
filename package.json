@@ -1,0 +1,46 @@
+{
+  "name": "p-gather",
+  "version": "1.0.0",
+  "description": "Execute Promise in parallel with concurrency support and gather all the results",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint test *.js",
+    "test": "npm run lint && npm run test-local",
+    "test-local": "egg-bin test",
+    "autod": "autod",
+    "cov": "egg-bin cov",
+    "ci": "npm run lint && npm run cov"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/node-modules/p-gather.git"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "co",
+    "parallel",
+    "gather",
+    "koa"
+  ],
+  "author": "ngot <zhuanghengfei@gmail.com> (http://ngot.me)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/node-modules/p-gather/issues"
+  },
+  "homepage": "https://github.com/node-modules/p-gather",
+  "dependencies": {
+    "co-thread": "0.0.1"
+  },
+  "devDependencies": {
+    "egg-bin": "^4.4.1",
+    "egg-ci": "^1.8.0",
+    "eslint": "^4.19.0",
+    "eslint-config-egg": "^7.0.0"
+  },
+  "ci": {
+    "version": "8, 9",
+    "license": true
+  }
+}
