@@ -31,13 +31,13 @@
   },
   "homepage": "https://github.com/node-modules/p-gather",
   "dependencies": {
-    "co-thread": "0.0.1",
     "is-type-of": "^1.2.0"
   },
   "devDependencies": {
+    "autod": "^3.0.1",
     "egg-bin": "^4.4.1",
     "egg-ci": "^1.8.0",
-    "eslint": "^4.19.0",
+    "eslint": "^4.19.1",
     "eslint-config-egg": "^7.0.0"
   },
   "ci": {
