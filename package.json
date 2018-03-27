@@ -1,6 +1,6 @@
 {
   "name": "p-gather",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Execute Promise in parallel with concurrency support and gather all the results",
   "main": "index.js",
   "scripts": {
