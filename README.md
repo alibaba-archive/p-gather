@@ -35,7 +35,7 @@ $ npm install p-gather
 
 ```js
 const gather = require('p-gather');
-const thread = require('co-thread');
+const thread = gather.thread;
 
 function sleep(n) {
   return new Promise(resolve => {
@@ -80,7 +80,11 @@ async function random() {
 
 ### gather(Promise, [concurrency])
 
-Execute `Promise` in parallel, with the given concurrency defaulting to 5, and gather the result
+Execute `Promise` array in parallel, with the given concurrency defaulting to 5, and gather the result
+
+### gather.thread(Function, [concurrency])
+
+Run a function in parallel N times. Function must return a Promise Object.
 
 ## License
 

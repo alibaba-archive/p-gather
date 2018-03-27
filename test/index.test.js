@@ -2,7 +2,7 @@
 
 const assert = require('assert');
 const gather = require('../');
-const thread = require('co-thread');
+const thread = gather.thread;
 
 function sleep(n) {
   return new Promise(resolve => {
