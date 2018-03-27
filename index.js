@@ -2,14 +2,14 @@
 
 const thread = require('co-thread');
 
-module.exports = async function gather(thunks, n){
+module.exports = async function gather(thunks, n) {
   n = Math.min(n || 5, thunks.length);
   const ret = [];
   let index = 0;
 
   async function next() {
-    let i = index++;
-    ret[i] = {isError: false};
+    const i = index++;
+    ret[i] = { isError: false };
     try {
       ret[i].value = await thunks[i]();
     } catch (err) {
